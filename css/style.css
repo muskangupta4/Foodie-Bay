@@ -99,3 +99,7 @@ h1{
 h2{
     margin-left: 50px;
 }
+.carousel-inner{
+    opacity: 0.8;
+}
+
