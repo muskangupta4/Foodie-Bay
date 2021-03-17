@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Foodie Bay</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.cs">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+</head>
+<body>
+	<nav  id="navbar">
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+		<div id="logo">
+      <img src="logo.jfif" alt="logo" height="100" width="100">
+    </div>
+    <div class="topnav" id="myTopnav">
+
+
+  <a href="#home" class="active">Home</a>
+  <a href="#news">Order Now</a>
+  <a href="#contact">About us</a>
+  <a href="#about">Contact Us</a>
+  
+</div>
+<button style="font-size:24px">Add to Cart <i class="fa fa-shopping-bag"></i></button>
+	</nav>
+
+
+
+	<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<style type="text/css">
+	*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+	 align-items: center;
+	 color: white;
+	background-color: #343a40;
+	display: flex;
+}
+button{
+	position:absolute;
+	right:5px;
+	top:35px;
+	border-radius: 80px;}
+.topnav a {
+  
+  
+  color: white;
+  
+  padding: 3px 22px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  border-radius: 20px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+.icon {
+  display: none;
+}
+#logo img{
+    margin: 20px 35px;
+    height: 56px;
+    border-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+ /* .topnav a:not(:first-child) {display: none;}*/
+   a.icon {
+    display:flex;
+    color: white;
+  
+  }
+  .topnav a{
+  	display:none;
+  }
+  .topnav.responsive {position: relative;}
+  .responsive .icon {
+    position:absolute;
+    right: 0;
+    top: 0;
+    
+  }
+  .topnav.responsive a {
+    
+    display: flex;
+    position:relative;   
+  }
+}
+
+
+</style>
+
+
+</body>
+
+</html>
